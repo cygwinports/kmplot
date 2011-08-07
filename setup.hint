@@ -1,0 +1,4 @@
+category: KDE Math
+requires: libgcc1 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libQtSvg4 libQtXml4 libstdc++6
+sdesc: "KDE mathematical function plotter"
+ldesc: "KDE education suite"
