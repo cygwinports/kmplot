@@ -1,0 +1,8 @@
+inherit kde4
+
+NAME="kmplot"
+VERSION=4.10.5
+RELEASE=1
+CATEGORY="Math"
+SUMMARY="KDE mathematical function plotter"
+DESCRIPTION="Part of the KDE education suite"
