@@ -6,3 +6,5 @@ RELEASE=1
 CATEGORY="Math"
 SUMMARY="KDE mathematical function plotter"
 DESCRIPTION="Part of the KDE education suite"
+
+REQUIRES="kde-runtime"
