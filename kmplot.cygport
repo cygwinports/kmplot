@@ -1,8 +1,33 @@
 inherit kf5
 
 NAME="kmplot"
-VERSION=17.04.3
+VERSION=17.08.3
 RELEASE=1
 CATEGORY="Math"
 SUMMARY="KDE mathematical function plotter"
 DESCRIPTION="Part of the KDE education suite"
+
+PKG_NAMES="${NAME} ${NAME}5-part"
+kmplot_REQUIRES="${NAME}5-part"
+kmplot_CONTENTS="
+	etc/postinstall/kmplot.sh
+	usr/bin/kmplot.exe
+	usr/share/applications/org.kde.kmplot.desktop
+	usr/share/config.kcfg/kmplot.kcfg
+	usr/share/dbus-1/interfaces/org.kde.kmplot.*
+	usr/share/doc/HTML/*/kmplot/
+	usr/share/doc/kmplot/
+	usr/share/icons/hicolor/*/apps/kmplot.*
+	usr/share/kxmlgui5/kmplot/kmplot_shell.rc
+	usr/share/locale/*/LC_MESSAGES/kmplot.mo
+	usr/share/man/man1/kmplot.1*
+	usr/share/man/*/man1/kmplot.1*
+	usr/share/metainfo/org.kde.kmplot.appdata.xml
+"
+kmplot5_part_CATEGORY="KDE"
+kmplot5_part_CONTENTS="
+	usr/lib/qt5/plugins/kmplotpart.dll
+	usr/share/kservices5/kmplot_part.desktop
+	usr/share/kxmlgui5/kmplot/kmplot_part.rc
+	usr/share/kxmlgui5/kmplot/kmplot_part_readonly.rc
+"
